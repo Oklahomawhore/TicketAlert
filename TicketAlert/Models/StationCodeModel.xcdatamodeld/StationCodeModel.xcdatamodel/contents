@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14315.18" systemVersion="18A391" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="StationCode" representedClassName="StationCode" syncable="YES" codeGenerationType="class">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="name" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StationName" inverseName="code" inverseEntity="StationName" syncable="YES"/>
+    </entity>
+    <entity name="StationName" representedClassName="StationName" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="code" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StationCode" inverseName="name" inverseEntity="StationCode" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="StationCode" positionX="8275.24609375" positionY="2581" width="128" height="73"/>
+        <element name="StationName" positionX="8522.44921875" positionY="2664.26171875" width="128" height="73"/>
+    </elements>
+</model>

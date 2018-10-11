@@ -7,21 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4640423C216FA67E00E85245 /* station_name.js in Resources */ = {isa = PBXBuildFile; fileRef = 4640423B216FA67D00E85245 /* station_name.js */; };
 		46421646216EEAEA0007A4BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46421645216EEAEA0007A4BE /* AppDelegate.swift */; };
-		46421648216EEAEA0007A4BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46421647216EEAEA0007A4BE /* ViewController.swift */; };
 		4642164B216EEAEA0007A4BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46421649216EEAEA0007A4BE /* Main.storyboard */; };
 		4642164D216EEAEB0007A4BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4642164C216EEAEB0007A4BE /* Assets.xcassets */; };
 		46421650216EEAEB0007A4BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4642164E216EEAEB0007A4BE /* LaunchScreen.storyboard */; };
+		4642165A216EEC650007A4BE /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46421659216EEC650007A4BE /* Route.swift */; };
+		4642165C216EEC720007A4BE /* TicketQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4642165B216EEC720007A4BE /* TicketQuery.swift */; };
+		46421660216EEE2C0007A4BE /* 订阅按钮.png in Resources */ = {isa = PBXBuildFile; fileRef = 4642165F216EEE2C0007A4BE /* 订阅按钮.png */; };
+		46421662216EEE6B0007A4BE /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46421661216EEE6B0007A4BE /* HomeScreenViewController.swift */; };
+		46421666216EFA250007A4BE /* StationCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46421665216EFA250007A4BE /* StationCode.swift */; };
+		4642168D216F052E0007A4BE /* StationCodeModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4642168B216F052E0007A4BE /* StationCodeModel.xcdatamodeld */; };
+		4642168F216F2D860007A4BE /* code.js in Resources */ = {isa = PBXBuildFile; fileRef = 4642168E216F2D860007A4BE /* code.js */; };
+		5A500908FDE9A4B5460A0820 /* Pods_TicketAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3429040A23CA6CB64E737320 /* Pods_TicketAlert.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16325B59E4C978D417C60B5F /* Pods-TicketAlert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketAlert.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TicketAlert/Pods-TicketAlert.debug.xcconfig"; sourceTree = "<group>"; };
+		3429040A23CA6CB64E737320 /* Pods_TicketAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TicketAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4640423B216FA67D00E85245 /* station_name.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = station_name.js; sourceTree = "<group>"; };
 		46421642216EEAEA0007A4BE /* TicketAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicketAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46421645216EEAEA0007A4BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		46421647216EEAEA0007A4BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4642164A216EEAEA0007A4BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4642164C216EEAEB0007A4BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4642164F216EEAEB0007A4BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46421651216EEAEB0007A4BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46421659216EEC650007A4BE /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		4642165B216EEC720007A4BE /* TicketQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketQuery.swift; sourceTree = "<group>"; };
+		4642165F216EEE2C0007A4BE /* 订阅按钮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "订阅按钮.png"; sourceTree = "<group>"; };
+		46421661216EEE6B0007A4BE /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		46421665216EFA250007A4BE /* StationCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationCode.swift; sourceTree = "<group>"; };
+		4642168C216F052E0007A4BE /* StationCodeModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StationCodeModel.xcdatamodel; sourceTree = "<group>"; };
+		4642168E216F2D860007A4BE /* code.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = code.js; sourceTree = "<group>"; };
+		C298192BF6139214864D51D2 /* Pods-TicketAlert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketAlert.release.xcconfig"; path = "Pods/Target Support Files/Pods-TicketAlert/Pods-TicketAlert.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +47,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A500908FDE9A4B5460A0820 /* Pods_TicketAlert.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4042663366D7398DBBB8F318 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16325B59E4C978D417C60B5F /* Pods-TicketAlert.debug.xcconfig */,
+				C298192BF6139214864D51D2 /* Pods-TicketAlert.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		46421639216EEAEA0007A4BE = {
 			isa = PBXGroup;
 			children = (
 				46421644216EEAEA0007A4BE /* TicketAlert */,
 				46421643216EEAEA0007A4BE /* Products */,
+				4042663366D7398DBBB8F318 /* Pods */,
+				74EF3F5FB233BD92FD956203 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +84,45 @@
 		46421644216EEAEA0007A4BE /* TicketAlert */ = {
 			isa = PBXGroup;
 			children = (
-				46421645216EEAEA0007A4BE /* AppDelegate.swift */,
-				46421647216EEAEA0007A4BE /* ViewController.swift */,
+				46421658216EEC580007A4BE /* Models */,
 				46421649216EEAEA0007A4BE /* Main.storyboard */,
-				4642164C216EEAEB0007A4BE /* Assets.xcassets */,
-				4642164E216EEAEB0007A4BE /* LaunchScreen.storyboard */,
+				46421661216EEE6B0007A4BE /* HomeScreenViewController.swift */,
 				46421651216EEAEB0007A4BE /* Info.plist */,
+				46421657216EEC350007A4BE /* Supporting Files */,
 			);
 			path = TicketAlert;
+			sourceTree = "<group>";
+		};
+		46421657216EEC350007A4BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4642168E216F2D860007A4BE /* code.js */,
+				4640423B216FA67D00E85245 /* station_name.js */,
+				4642164C216EEAEB0007A4BE /* Assets.xcassets */,
+				4642165F216EEE2C0007A4BE /* 订阅按钮.png */,
+				46421645216EEAEA0007A4BE /* AppDelegate.swift */,
+				4642164E216EEAEB0007A4BE /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46421658216EEC580007A4BE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				46421659216EEC650007A4BE /* Route.swift */,
+				4642165B216EEC720007A4BE /* TicketQuery.swift */,
+				46421665216EFA250007A4BE /* StationCode.swift */,
+				4642168B216F052E0007A4BE /* StationCodeModel.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		74EF3F5FB233BD92FD956203 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3429040A23CA6CB64E737320 /* Pods_TicketAlert.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +132,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46421654216EEAEB0007A4BE /* Build configuration list for PBXNativeTarget "TicketAlert" */;
 			buildPhases = (
+				F4133F8986069116EE370BA9 /* [CP] Check Pods Manifest.lock */,
 				4642163E216EEAEA0007A4BE /* Sources */,
 				4642163F216EEAEA0007A4BE /* Frameworks */,
 				46421640216EEAEA0007A4BE /* Resources */,
+				DEA6A5C7D32C935F9203545A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,18 +188,74 @@
 				46421650216EEAEB0007A4BE /* LaunchScreen.storyboard in Resources */,
 				4642164D216EEAEB0007A4BE /* Assets.xcassets in Resources */,
 				4642164B216EEAEA0007A4BE /* Main.storyboard in Resources */,
+				4642168F216F2D860007A4BE /* code.js in Resources */,
+				4640423C216FA67E00E85245 /* station_name.js in Resources */,
+				46421660216EEE2C0007A4BE /* 订阅按钮.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DEA6A5C7D32C935F9203545A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TicketAlert/Pods-TicketAlert-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TicketAlert/Pods-TicketAlert-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4133F8986069116EE370BA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TicketAlert-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4642163E216EEAEA0007A4BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46421648216EEAEA0007A4BE /* ViewController.swift in Sources */,
+				4642165A216EEC650007A4BE /* Route.swift in Sources */,
+				46421662216EEE6B0007A4BE /* HomeScreenViewController.swift in Sources */,
+				4642168D216F052E0007A4BE /* StationCodeModel.xcdatamodeld in Sources */,
+				4642165C216EEC720007A4BE /* TicketQuery.swift in Sources */,
 				46421646216EEAEA0007A4BE /* AppDelegate.swift in Sources */,
+				46421666216EFA250007A4BE /* StationCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,11 +399,13 @@
 		};
 		46421655216EEAEB0007A4BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16325B59E4C978D417C60B5F /* Pods-TicketAlert.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VXD7M36PV5;
 				INFOPLIST_FILE = TicketAlert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,11 +419,13 @@
 		};
 		46421656216EEAEB0007A4BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C298192BF6139214864D51D2 /* Pods-TicketAlert.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VXD7M36PV5;
 				INFOPLIST_FILE = TicketAlert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -336,6 +459,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4642168B216F052E0007A4BE /* StationCodeModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4642168C216F052E0007A4BE /* StationCodeModel.xcdatamodel */,
+			);
+			currentVersion = 4642168C216F052E0007A4BE /* StationCodeModel.xcdatamodel */;
+			path = StationCodeModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4642163A216EEAEA0007A4BE /* Project object */;
 }

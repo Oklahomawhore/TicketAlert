@@ -1,24 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QnN-iP-Jci">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--车票订阅-->
+        <scene sceneID="tJR-8J-8H8">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="wka-Ma-bSD" customClass="HomeScreenViewController" customModule="TicketAlert" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ugd-n3-DnV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入始发站" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="okO-au-Ssz">
+                                <rect key="frame" x="37" y="107" width="295" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" spellCheckingType="no"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="1TT-Vs-qe2">
+                                <rect key="frame" x="0.0" y="229" width="375" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="560837553.65313697">
+                                    <!--2018-10-10 04:12:33 +0000-->
+                                </date>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="始发站：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="633-sM-XXi">
+                                <rect key="frame" x="37" y="78" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="终点站：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pS3-WF-FpT">
+                                <rect key="frame" x="37" y="145" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入终点站" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nLE-Yr-6Zs">
+                                <rect key="frame" x="37" y="174" width="295" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" spellCheckingType="no"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yy3-YD-dl3">
+                                <rect key="frame" x="105" y="453" width="165" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="9mH-1F-Oor"/>
+                                    <constraint firstAttribute="height" constant="44" id="DIL-KI-31c"/>
+                                </constraints>
+                                <state key="normal" image="订阅按钮.png"/>
+                                <connections>
+                                    <action selector="subscribeButtonTouched:" destination="wka-Ma-bSD" eventType="touchUpInside" id="ubb-Qy-PkF"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="yy3-YD-dl3" firstAttribute="centerX" secondItem="yqF-JR-Qa9" secondAttribute="centerX" id="7LE-Jg-Dax"/>
+                            <constraint firstItem="nLE-Yr-6Zs" firstAttribute="top" secondItem="pS3-WF-FpT" secondAttribute="bottom" constant="8" id="E4C-Tj-cv8"/>
+                            <constraint firstItem="1TT-Vs-qe2" firstAttribute="top" secondItem="nLE-Yr-6Zs" secondAttribute="bottom" constant="25" id="Eic-Xk-s2M"/>
+                            <constraint firstItem="pS3-WF-FpT" firstAttribute="top" secondItem="okO-au-Ssz" secondAttribute="bottom" constant="8" id="Esu-0y-SWu"/>
+                            <constraint firstItem="okO-au-Ssz" firstAttribute="top" secondItem="633-sM-XXi" secondAttribute="bottom" constant="8" id="PCN-2h-ntY"/>
+                            <constraint firstItem="633-sM-XXi" firstAttribute="top" secondItem="yqF-JR-Qa9" secondAttribute="top" constant="14" id="VFX-pe-sqr"/>
+                            <constraint firstItem="yqF-JR-Qa9" firstAttribute="trailing" secondItem="1TT-Vs-qe2" secondAttribute="trailing" id="Vdd-Hh-dnC"/>
+                            <constraint firstItem="yqF-JR-Qa9" firstAttribute="trailing" secondItem="okO-au-Ssz" secondAttribute="trailing" constant="43" id="aXf-vW-k5R"/>
+                            <constraint firstItem="okO-au-Ssz" firstAttribute="leading" secondItem="yqF-JR-Qa9" secondAttribute="leading" constant="37" id="aoY-XG-wn1"/>
+                            <constraint firstItem="yy3-YD-dl3" firstAttribute="top" secondItem="1TT-Vs-qe2" secondAttribute="bottom" constant="8" id="eQ0-ir-j76"/>
+                            <constraint firstItem="pS3-WF-FpT" firstAttribute="leading" secondItem="yqF-JR-Qa9" secondAttribute="leading" constant="37" id="fsa-Hk-bUJ"/>
+                            <constraint firstItem="yqF-JR-Qa9" firstAttribute="trailing" secondItem="nLE-Yr-6Zs" secondAttribute="trailing" constant="43" id="jka-eO-rGY"/>
+                            <constraint firstItem="1TT-Vs-qe2" firstAttribute="leading" secondItem="yqF-JR-Qa9" secondAttribute="leading" id="kQt-X6-evi"/>
+                            <constraint firstItem="633-sM-XXi" firstAttribute="leading" secondItem="yqF-JR-Qa9" secondAttribute="leading" constant="37" id="s8W-AN-AL5"/>
+                            <constraint firstItem="nLE-Yr-6Zs" firstAttribute="leading" secondItem="yqF-JR-Qa9" secondAttribute="leading" constant="37" id="unm-dR-Dy1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yqF-JR-Qa9"/>
                     </view>
+                    <navigationItem key="navigationItem" title="车票订阅" id="NAg-Jo-CIC"/>
+                    <connections>
+                        <outlet property="dataPicker" destination="1TT-Vs-qe2" id="MK2-nn-2Rn"/>
+                        <outlet property="destinationText" destination="nLE-Yr-6Zs" id="Tf5-Sx-moF"/>
+                        <outlet property="originalText" destination="okO-au-Ssz" id="h6M-xi-If7"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TGu-e0-Blq" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2010.4000000000001" y="132.68365817091455"/>
+        </scene>
+        <!--Subscribed-->
+        <scene sceneID="zd3-1M-9Yi">
+            <objects>
+                <viewController id="SB9-NT-s0H" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="10T-PM-6Tb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="hnU-fg-9me"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Subscribed" id="HEN-z1-OiB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TWx-8Q-qe6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1060" y="829"/>
+        </scene>
+        <!--Personal-->
+        <scene sceneID="LTB-CK-LUs">
+            <objects>
+                <viewController id="YIf-4b-fLZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p4V-xW-U8b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="JIX-gj-MbL"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Personal" id="mc5-b8-Fc7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H1d-Zq-BpO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1060" y="1652"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="eMh-oJ-w37">
+            <objects>
+                <tabBarController id="QnN-iP-Jci" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fCA-pc-Hg3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Uvf-mJ-PSX" kind="relationship" relationship="viewControllers" id="ehS-0m-0mh"/>
+                        <segue destination="SB9-NT-s0H" kind="relationship" relationship="viewControllers" id="oFC-Ri-wtb"/>
+                        <segue destination="YIf-4b-fLZ" kind="relationship" relationship="viewControllers" id="rPD-1I-RKW"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4C0-KI-Rjk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-452" y="643"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="Tss-AH-Bp3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Uvf-mJ-PSX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" id="cen-lw-HHA"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dAY-Fb-LeA">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wka-Ma-bSD" kind="relationship" relationship="rootViewController" id="cYG-4G-VbP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VoB-xn-98K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1071.2" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="订阅按钮.png" width="300" height="80"/>
+    </resources>
 </document>
