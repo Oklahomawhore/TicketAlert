@@ -10,7 +10,8 @@ import UIKit
 
 class HomeScreenViewController: UIViewController, UITextFieldDelegate
 {
-    var query = TicketQuery()
+    var query = TicketQuery.shared
+    
     var routeNumber: String = ""
 
     @IBOutlet weak var originalText: UITextField! { didSet { originalText.delegate = self } }
@@ -33,16 +34,17 @@ class HomeScreenViewController: UIViewController, UITextFieldDelegate
     private func sendSubscription() {
         if let fromStationText = originalText.text, let toStationText = destinationText.text {
             let departureDate = dataPicker.date
+            /*
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy-MM-dd"
             let strDate = dateFormatter.string(from: departureDate)
+             */
             Station.fetchStationList()
             if let fromStationCode = Station.stationList[fromStationText], let toStationCode = Station.stationList[toStationText] {
-                let route = Route(trainDate: strDate, fromStation: fromStationCode, toStation: toStationCode)
-                print("\(route)")
+                let route = Route(trainDate: departureDate, fromStation: fromStationCode, toStation: toStationCode)
                 query.subscribe(to: route)
             } else {
-                var alertView = UIAlertController()
+                let alertView = UIAlertController()
                 alertView.message = "无法获取站名，请输入正确的地名或站名"
                 alertView.addAction(UIAlertAction(title: "OK", style: .default))
                 self.present(alertView, animated: true)
@@ -50,9 +52,20 @@ class HomeScreenViewController: UIViewController, UITextFieldDelegate
         }
     }
     
+    private var subscriptionObserver: NSObjectProtocol?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        subscriptionObserver = NotificationCenter.default.addObserver(
+            forName: Notification.Name("subscriptionSuccess"),
+            object: TicketQuery.self,
+            queue: OperationQueue.main,
+            using: { (notification) in
+                let alertView = UIAlertController()
+                alertView.addAction(UIAlertAction(title: "OK", style: .default))
+                alertView.message = "succesfully subscribed!"
+                self.present(alertView, animated: true)
+        })
         // Do any additional setup after loading the view.
     }
     
@@ -68,3 +81,4 @@ class HomeScreenViewController: UIViewController, UITextFieldDelegate
     */
 
 }
+

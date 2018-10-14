@@ -94,18 +94,87 @@
         <!--Subscribed-->
         <scene sceneID="zd3-1M-9Yi">
             <objects>
-                <viewController id="SB9-NT-s0H" sceneMemberID="viewController">
+                <viewController id="SB9-NT-s0H" customClass="SubscribedViewController" customModule="TicketAlert" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="10T-PM-6Tb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7dR-yr-pys">
+                                <rect key="frame" x="16" y="20" width="343" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订阅列表" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XNV-cd-gZI">
+                                    <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RouteCell" id="jvi-1a-uNS" customClass="RouteListTableViewCell" customModule="TicketAlert" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jvi-1a-uNS" id="2Bl-N5-xXw">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上海→南京" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVs-rY-QWT">
+                                                    <rect key="frame" x="15" y="11.5" width="84" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有票" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAO-nS-h5l">
+                                                    <rect key="frame" x="293" y="11.5" width="35" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09/10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37x-4P-1Lk">
+                                                    <rect key="frame" x="176" y="11.5" width="44" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="37x-4P-1Lk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XVs-rY-QWT" secondAttribute="trailing" id="3fF-pi-eQq"/>
+                                                <constraint firstItem="fAO-nS-h5l" firstAttribute="centerY" secondItem="2Bl-N5-xXw" secondAttribute="centerY" id="43N-qN-vx8"/>
+                                                <constraint firstItem="XVs-rY-QWT" firstAttribute="centerY" secondItem="2Bl-N5-xXw" secondAttribute="centerY" id="9ao-V4-pfr"/>
+                                                <constraint firstAttribute="trailing" secondItem="fAO-nS-h5l" secondAttribute="trailing" constant="15" id="AB6-hw-DRG"/>
+                                                <constraint firstItem="XVs-rY-QWT" firstAttribute="leading" secondItem="2Bl-N5-xXw" secondAttribute="leading" constant="15" id="Hh3-tf-91x"/>
+                                                <constraint firstItem="37x-4P-1Lk" firstAttribute="centerY" secondItem="2Bl-N5-xXw" secondAttribute="centerY" id="KK1-AR-j97"/>
+                                                <constraint firstItem="XVs-rY-QWT" firstAttribute="centerY" secondItem="2Bl-N5-xXw" secondAttribute="centerY" id="Ogk-nX-Qu8"/>
+                                                <constraint firstItem="fAO-nS-h5l" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="37x-4P-1Lk" secondAttribute="trailing" id="iWe-Li-bBn"/>
+                                                <constraint firstItem="37x-4P-1Lk" firstAttribute="centerX" secondItem="2Bl-N5-xXw" secondAttribute="centerX" constant="26.5" id="ncu-eC-tVx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="leftTicketStatusLabel" destination="fAO-nS-h5l" id="igJ-zI-ved"/>
+                                            <outlet property="midDateDisplayLabel" destination="37x-4P-1Lk" id="k6o-d7-Ged"/>
+                                            <outlet property="routeInfoLabel" destination="XVs-rY-QWT" id="fOa-BS-7nH"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7dR-yr-pys" firstAttribute="leading" secondItem="hnU-fg-9me" secondAttribute="leading" constant="16" id="8Ym-bq-5gc"/>
+                            <constraint firstItem="hnU-fg-9me" firstAttribute="bottom" secondItem="7dR-yr-pys" secondAttribute="bottom" id="Hb9-pD-3fJ"/>
+                            <constraint firstItem="7dR-yr-pys" firstAttribute="top" secondItem="hnU-fg-9me" secondAttribute="top" id="eu1-x9-3p4"/>
+                            <constraint firstItem="hnU-fg-9me" firstAttribute="trailing" secondItem="7dR-yr-pys" secondAttribute="trailing" constant="16" id="yQi-hg-LFM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hnU-fg-9me"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Subscribed" id="HEN-z1-OiB"/>
+                    <connections>
+                        <outlet property="tableView" destination="7dR-yr-pys" id="oX6-1z-yk4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TWx-8Q-qe6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1060" y="829"/>
+            <point key="canvasLocation" x="1060" y="828.93553223388312"/>
         </scene>
         <!--Personal-->
         <scene sceneID="LTB-CK-LUs">
@@ -123,10 +192,10 @@
             </objects>
             <point key="canvasLocation" x="1060" y="1652"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab View Controller-->
         <scene sceneID="eMh-oJ-w37">
             <objects>
-                <tabBarController id="QnN-iP-Jci" sceneMemberID="viewController">
+                <tabBarController id="QnN-iP-Jci" customClass="TabViewController" customModule="TicketAlert" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fCA-pc-Hg3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

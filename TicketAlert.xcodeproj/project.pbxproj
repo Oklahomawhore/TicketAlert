@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4640423C216FA67E00E85245 /* station_name.js in Resources */ = {isa = PBXBuildFile; fileRef = 4640423B216FA67D00E85245 /* station_name.js */; };
+		4640423E21704E9200E85245 /* RouteListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4640423D21704E9200E85245 /* RouteListTableViewCell.swift */; };
+		464042402171A93A00E85245 /* SubscribedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4640423F2171A93A00E85245 /* SubscribedViewController.swift */; };
+		46404242217316D700E85245 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46404241217316D700E85245 /* TabViewController.swift */; };
 		46421646216EEAEA0007A4BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46421645216EEAEA0007A4BE /* AppDelegate.swift */; };
 		4642164B216EEAEA0007A4BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46421649216EEAEA0007A4BE /* Main.storyboard */; };
 		4642164D216EEAEB0007A4BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4642164C216EEAEB0007A4BE /* Assets.xcassets */; };
@@ -26,6 +29,9 @@
 		16325B59E4C978D417C60B5F /* Pods-TicketAlert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketAlert.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TicketAlert/Pods-TicketAlert.debug.xcconfig"; sourceTree = "<group>"; };
 		3429040A23CA6CB64E737320 /* Pods_TicketAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TicketAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4640423B216FA67D00E85245 /* station_name.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = station_name.js; sourceTree = "<group>"; };
+		4640423D21704E9200E85245 /* RouteListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteListTableViewCell.swift; sourceTree = "<group>"; };
+		4640423F2171A93A00E85245 /* SubscribedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribedViewController.swift; sourceTree = "<group>"; };
+		46404241217316D700E85245 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		46421642216EEAEA0007A4BE /* TicketAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicketAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46421645216EEAEA0007A4BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4642164A216EEAEA0007A4BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -87,6 +93,9 @@
 				46421658216EEC580007A4BE /* Models */,
 				46421649216EEAEA0007A4BE /* Main.storyboard */,
 				46421661216EEE6B0007A4BE /* HomeScreenViewController.swift */,
+				4640423F2171A93A00E85245 /* SubscribedViewController.swift */,
+				4640423D21704E9200E85245 /* RouteListTableViewCell.swift */,
+				46404241217316D700E85245 /* TabViewController.swift */,
 				46421651216EEAEB0007A4BE /* Info.plist */,
 				46421657216EEC350007A4BE /* Supporting Files */,
 			);
@@ -255,6 +264,9 @@
 				4642168D216F052E0007A4BE /* StationCodeModel.xcdatamodeld in Sources */,
 				4642165C216EEC720007A4BE /* TicketQuery.swift in Sources */,
 				46421646216EEAEA0007A4BE /* AppDelegate.swift in Sources */,
+				4640423E21704E9200E85245 /* RouteListTableViewCell.swift in Sources */,
+				46404242217316D700E85245 /* TabViewController.swift in Sources */,
+				464042402171A93A00E85245 /* SubscribedViewController.swift in Sources */,
 				46421666216EFA250007A4BE /* StationCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
