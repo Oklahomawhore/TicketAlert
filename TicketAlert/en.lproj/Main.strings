@@ -1,0 +1,78 @@
+
+/* Class = "UINavigationItem"; title = "个人中心"; ObjectID = "02W-hu-x6N"; */
+"02W-hu-x6N.title" = "个人中心";
+
+/* Class = "UILabel"; text = "商务座特等座"; ObjectID = "0WH-vu-fyh"; */
+"0WH-vu-fyh.text" = "商务座特等座";
+
+/* Class = "UILabel"; text = "软卧"; ObjectID = "2UL-l2-9AX"; */
+"2UL-l2-9AX.text" = "软卧";
+
+/* Class = "UILabel"; text = "硬座"; ObjectID = "2c9-h8-g4G"; */
+"2c9-h8-g4G.text" = "硬座";
+
+/* Class = "UILabel"; text = "09/10"; ObjectID = "37x-4P-1Lk"; */
+"37x-4P-1Lk.text" = "09/10";
+
+/* Class = "UILabel"; text = "始发站："; ObjectID = "633-sM-XXi"; */
+"633-sM-XXi.text" = "始发站：";
+
+/* Class = "UILabel"; text = "出发日期：2018年10月20日"; ObjectID = "78A-do-KhE"; */
+"78A-do-KhE.text" = "出发日期：2018年10月20日";
+
+/* Class = "UILabel"; text = "二等座"; ObjectID = "BhW-0f-WH1"; */
+"BhW-0f-WH1.text" = "二等座";
+
+/* Class = "UITabBarItem"; title = "Subscribed"; ObjectID = "HEN-z1-OiB"; */
+"HEN-z1-OiB.title" = "Subscribed";
+
+/* Class = "UINavigationItem"; title = "订阅列表"; ObjectID = "Hky-eL-PMG"; */
+"Hky-eL-PMG.title" = "订阅列表";
+
+/* Class = "UILabel"; text = "高级软卧"; ObjectID = "Ji0-qR-mAk"; */
+"Ji0-qR-mAk.text" = "高级软卧";
+
+/* Class = "UINavigationItem"; title = "火车票Pop!"; ObjectID = "NAg-Jo-CIC"; */
+"NAg-Jo-CIC.title" = "火车票Pop!";
+
+/* Class = "UILabel"; text = "无座"; ObjectID = "OmG-BC-Kqy"; */
+"OmG-BC-Kqy.text" = "无座";
+
+/* Class = "UILabel"; text = "只看高铁/动车"; ObjectID = "RRR-a2-dOy"; */
+"RRR-a2-dOy.text" = "只看高铁/动车";
+
+/* Class = "UILabel"; text = "软座"; ObjectID = "T5m-0S-XoO"; */
+"T5m-0S-XoO.text" = "软座";
+
+/* Class = "UILabel"; text = "一等座"; ObjectID = "TQL-92-15T"; */
+"TQL-92-15T.text" = "一等座";
+
+/* Class = "UILabel"; text = "上海→南京"; ObjectID = "XVs-rY-QWT"; */
+"XVs-rY-QWT.text" = "上海→南京";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "cen-lw-HHA"; */
+"cen-lw-HHA.title" = "Home";
+
+/* Class = "UILabel"; text = "有票"; ObjectID = "fAO-nS-h5l"; */
+"fAO-nS-h5l.text" = "有票";
+
+/* Class = "UILabel"; text = "2018年10月"; ObjectID = "iiO-Kj-UMR"; */
+"iiO-Kj-UMR.text" = "2018年10月";
+
+/* Class = "UITabBarItem"; title = "Personal"; ObjectID = "mc5-b8-Fc7"; */
+"mc5-b8-Fc7.title" = "Personal";
+
+/* Class = "UITextField"; placeholder = "请输入终点站"; ObjectID = "nLE-Yr-6Zs"; */
+"nLE-Yr-6Zs.placeholder" = "请输入终点站";
+
+/* Class = "UILabel"; text = "动卧"; ObjectID = "nXt-d3-9dm"; */
+"nXt-d3-9dm.text" = "动卧";
+
+/* Class = "UILabel"; text = "硬卧"; ObjectID = "nf5-vx-YGc"; */
+"nf5-vx-YGc.text" = "硬卧";
+
+/* Class = "UITextField"; placeholder = "请输入始发站"; ObjectID = "okO-au-Ssz"; */
+"okO-au-Ssz.placeholder" = "请输入始发站";
+
+/* Class = "UILabel"; text = "终点站："; ObjectID = "pS3-WF-FpT"; */
+"pS3-WF-FpT.text" = "终点站：";

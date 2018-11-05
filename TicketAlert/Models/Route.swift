@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Route: Hashable, CustomDebugStringConvertible {
+struct Route: Hashable, CustomDebugStringConvertible, Codable {
     var debugDescription: String {
         return "\(fromStation)->\(toStation)"
     }

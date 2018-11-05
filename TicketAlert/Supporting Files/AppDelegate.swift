@@ -41,7 +41,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    
+    /*  MARK: commented out Core Data
     // MARK: - Core Data stack
     static var persistentContainer: NSPersistentContainer {
         return (UIApplication.shared.delegate as! AppDelegate).persistentContainer
@@ -93,6 +94,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-
+    */
 }
 

@@ -20,8 +20,9 @@
 		46421660216EEE2C0007A4BE /* 订阅按钮.png in Resources */ = {isa = PBXBuildFile; fileRef = 4642165F216EEE2C0007A4BE /* 订阅按钮.png */; };
 		46421662216EEE6B0007A4BE /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46421661216EEE6B0007A4BE /* HomeScreenViewController.swift */; };
 		46421666216EFA250007A4BE /* StationCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46421665216EFA250007A4BE /* StationCode.swift */; };
-		4642168D216F052E0007A4BE /* StationCodeModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4642168B216F052E0007A4BE /* StationCodeModel.xcdatamodeld */; };
 		4642168F216F2D860007A4BE /* code.js in Resources */ = {isa = PBXBuildFile; fileRef = 4642168E216F2D860007A4BE /* code.js */; };
+		46A48F36217C0FB8001B53AF /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A48F35217C0FB8001B53AF /* LogInViewController.swift */; };
+		46A48F38217C2978001B53AF /* SelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A48F37217C2978001B53AF /* SelfViewController.swift */; };
 		5A500908FDE9A4B5460A0820 /* Pods_TicketAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3429040A23CA6CB64E737320 /* Pods_TicketAlert.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,8 +44,9 @@
 		4642165F216EEE2C0007A4BE /* 订阅按钮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "订阅按钮.png"; sourceTree = "<group>"; };
 		46421661216EEE6B0007A4BE /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		46421665216EFA250007A4BE /* StationCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationCode.swift; sourceTree = "<group>"; };
-		4642168C216F052E0007A4BE /* StationCodeModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StationCodeModel.xcdatamodel; sourceTree = "<group>"; };
 		4642168E216F2D860007A4BE /* code.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = code.js; sourceTree = "<group>"; };
+		46A48F35217C0FB8001B53AF /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		46A48F37217C2978001B53AF /* SelfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfViewController.swift; sourceTree = "<group>"; };
 		C298192BF6139214864D51D2 /* Pods-TicketAlert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketAlert.release.xcconfig"; path = "Pods/Target Support Files/Pods-TicketAlert/Pods-TicketAlert.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,8 @@
 				46421661216EEE6B0007A4BE /* HomeScreenViewController.swift */,
 				4640423F2171A93A00E85245 /* SubscribedViewController.swift */,
 				4640423D21704E9200E85245 /* RouteListTableViewCell.swift */,
+				46A48F35217C0FB8001B53AF /* LogInViewController.swift */,
+				46A48F37217C2978001B53AF /* SelfViewController.swift */,
 				46404241217316D700E85245 /* TabViewController.swift */,
 				46421651216EEAEB0007A4BE /* Info.plist */,
 				46421657216EEC350007A4BE /* Supporting Files */,
@@ -121,7 +125,6 @@
 				46421659216EEC650007A4BE /* Route.swift */,
 				4642165B216EEC720007A4BE /* TicketQuery.swift */,
 				46421665216EFA250007A4BE /* StationCode.swift */,
-				4642168B216F052E0007A4BE /* StationCodeModel.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -216,6 +219,9 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TicketAlert/Pods-TicketAlert-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/JBDatePicker/JBDatePicker.framework",
+				"${BUILT_PRODUCTS_DIR}/LoginController/LoginController.framework",
+				"${BUILT_PRODUCTS_DIR}/SimpleCheckbox/SimpleCheckbox.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -223,6 +229,9 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JBDatePicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LoginController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimpleCheckbox.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,12 +270,13 @@
 			files = (
 				4642165A216EEC650007A4BE /* Route.swift in Sources */,
 				46421662216EEE6B0007A4BE /* HomeScreenViewController.swift in Sources */,
-				4642168D216F052E0007A4BE /* StationCodeModel.xcdatamodeld in Sources */,
+				46A48F36217C0FB8001B53AF /* LogInViewController.swift in Sources */,
 				4642165C216EEC720007A4BE /* TicketQuery.swift in Sources */,
 				46421646216EEAEA0007A4BE /* AppDelegate.swift in Sources */,
 				4640423E21704E9200E85245 /* RouteListTableViewCell.swift in Sources */,
 				46404242217316D700E85245 /* TabViewController.swift in Sources */,
 				464042402171A93A00E85245 /* SubscribedViewController.swift in Sources */,
+				46A48F38217C2978001B53AF /* SelfViewController.swift in Sources */,
 				46421666216EFA250007A4BE /* StationCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,19 +481,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		4642168B216F052E0007A4BE /* StationCodeModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				4642168C216F052E0007A4BE /* StationCodeModel.xcdatamodel */,
-			);
-			currentVersion = 4642168C216F052E0007A4BE /* StationCodeModel.xcdatamodel */;
-			path = StationCodeModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 4642163A216EEAEA0007A4BE /* Project object */;
 }
