@@ -10,6 +10,6 @@ by w.zhu
   
 软件界面截图：
 
-![Alt text](TicketAlert/blob/master/TicketAlert/Supporting%20Files/App%E7%95%8C%E9%9D%A2.jpg?raw=true "App界面")
+![Alt text](TicketAlert/blob/master/TicketAlert/Supporting\ Files/App界面.jpg?raw=true "App界面")
   
   
