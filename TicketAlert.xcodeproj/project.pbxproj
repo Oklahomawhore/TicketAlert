@@ -21,6 +21,7 @@
 		46421662216EEE6B0007A4BE /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46421661216EEE6B0007A4BE /* HomeScreenViewController.swift */; };
 		46421666216EFA250007A4BE /* StationCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46421665216EFA250007A4BE /* StationCode.swift */; };
 		4642168F216F2D860007A4BE /* code.js in Resources */ = {isa = PBXBuildFile; fileRef = 4642168E216F2D860007A4BE /* code.js */; };
+		46A0A32D21917D8A005AA612 /* App界面.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 46A0A32C21917D8A005AA612 /* App界面.jpg */; };
 		46A48F36217C0FB8001B53AF /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A48F35217C0FB8001B53AF /* LogInViewController.swift */; };
 		46A48F38217C2978001B53AF /* SelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A48F37217C2978001B53AF /* SelfViewController.swift */; };
 		5A500908FDE9A4B5460A0820 /* Pods_TicketAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3429040A23CA6CB64E737320 /* Pods_TicketAlert.framework */; };
@@ -45,6 +46,7 @@
 		46421661216EEE6B0007A4BE /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		46421665216EFA250007A4BE /* StationCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationCode.swift; sourceTree = "<group>"; };
 		4642168E216F2D860007A4BE /* code.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = code.js; sourceTree = "<group>"; };
+		46A0A32C21917D8A005AA612 /* App界面.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "App界面.jpg"; sourceTree = "<group>"; };
 		46A48F35217C0FB8001B53AF /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		46A48F37217C2978001B53AF /* SelfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfViewController.swift; sourceTree = "<group>"; };
 		C298192BF6139214864D51D2 /* Pods-TicketAlert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketAlert.release.xcconfig"; path = "Pods/Target Support Files/Pods-TicketAlert/Pods-TicketAlert.release.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 		46421657216EEC350007A4BE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				46A0A32C21917D8A005AA612 /* App界面.jpg */,
 				4642168E216F2D860007A4BE /* code.js */,
 				4640423B216FA67D00E85245 /* station_name.js */,
 				4642164C216EEAEB0007A4BE /* Assets.xcassets */,
@@ -199,6 +202,7 @@
 			files = (
 				46421650216EEAEB0007A4BE /* LaunchScreen.storyboard in Resources */,
 				4642164D216EEAEB0007A4BE /* Assets.xcassets in Resources */,
+				46A0A32D21917D8A005AA612 /* App界面.jpg in Resources */,
 				4642164B216EEAEA0007A4BE /* Main.storyboard in Resources */,
 				4642168F216F2D860007A4BE /* code.js in Resources */,
 				4640423C216FA67E00E85245 /* station_name.js in Resources */,
